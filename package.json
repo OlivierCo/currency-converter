@@ -1,0 +1,30 @@
+{
+  "private": true,
+  "name": "tradeledger",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "client": "yarn workspace client run start",
+    "gateway": "yarn workspace gateway run start",
+    "format": "prettier --write 'packages/**/*.{js,jsx,ts,tsx,json,css,scss,md}'",
+    "lint": "eslint .",
+    "start": "concurrently --kill-others-on-fail \"yarn client\" \"yarn gateway\""
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "concurrently": "5.1.0",
+    "eslint": "7.2.0",
+    "eslint-config-airbnb-base": "14.1.0",
+    "eslint-config-airbnb-typescript": "8.0.2",
+    "eslint-config-prettier": "6.11.0",
+    "eslint-plugin-import": "2.20.2",
+    "eslint-plugin-jsx-a11y": "6.2.3",
+    "eslint-plugin-prettier": "3.1.2",
+    "eslint-plugin-react": "7.19.0",
+    "eslint-plugin-react-hooks": "2.5.1",
+    "eslint-plugin-security": "1.4.0",
+    "prettier": "2.0.5",
+    "typescript": "3.9.5"
+  }
+}
