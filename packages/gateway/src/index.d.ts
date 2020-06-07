@@ -1,1 +1,1 @@
-declare module 'axios-jsonp'
+declare module 'currency-symbol-map'

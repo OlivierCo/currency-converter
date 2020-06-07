@@ -1,4 +1,6 @@
-# ArtFinder Technical Task
+# Simple currency converter
+
+This currency converter uses the https://www.ecb.europa.eu daily exchange rate.
 
 # Usage
 

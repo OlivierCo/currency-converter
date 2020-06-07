@@ -1,3 +1,4 @@
+import * as getSymbolFromCurrency from 'currency-symbol-map'
 import { get, dailyUrl } from '../../common'
 
 enum CurrencyEnum {
@@ -45,7 +46,12 @@ export const getRateResolver = async (): Promise<Array<DailyRate>> => {
   const parsedResponse = JSON.parse(response)
 
   if (parsedResponse['gesmes:Envelope']?.Cube?.Cube?.Cube) {
-    return parsedResponse['gesmes:Envelope']?.Cube?.Cube?.Cube
+    return parsedResponse['gesmes:Envelope']?.Cube?.Cube?.Cube.map(
+      (obj: DailyRate) => ({
+        ...obj,
+        symbol: getSymbolFromCurrency(obj.currency),
+      }),
+    )
   }
 
   throw Error()

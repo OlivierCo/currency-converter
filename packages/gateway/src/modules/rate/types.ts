@@ -3,6 +3,7 @@ import {
   GraphQLEnumType,
   GraphQLNonNull,
   GraphQLFloat,
+  GraphQLString,
 } from 'graphql'
 import { DailyRate } from './resolver'
 
@@ -57,5 +58,6 @@ export const GraphQLDailyRate = new GraphQLObjectType({
       description: 'rate for the according currency',
       resolve: (src: DailyRate) => +src.rate,
     },
+    symbol: { type: new GraphQLNonNull(GraphQLString) },
   },
 })
