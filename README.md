@@ -26,7 +26,7 @@ or
 npm start
 ```
 
-_PS: you can get the playground by opening `localhost:4000/graphql` in your browsers_
+_PS: you can get the playground by opening `localhost:4000/graphql` in your browsers ;-)_
 
 ## Tech Stack
 
@@ -39,3 +39,22 @@ _PS: you can get the playground by opening `localhost:4000/graphql` in your brow
 - apollo-cache-inmemory
 - apollo-link-http
 - emotionjs
+- jest
+- enzyme
+- uuid
+
+Just to name a few.
+
+## Test
+
+- For running test be sure you are at the root of the project and run:
+
+```
+yarn test
+or
+npm test
+```
+
+*Note*
+
+> I would have liked to spend more time on writting tests.
