@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DropDown should render correctly 1`] = `
+<EmotionCssPropInternal
+  __EMOTION_TYPE_PLEASE_DO_NOT_USE__={[Function]}
+  css={
+    Object {
+      "map": undefined,
+      "name": "y2yp78",
+      "next": undefined,
+      "styles": "position:relative;text-align:center;width:100%;",
+      "toString": [Function],
+    }
+  }
+>
+  <Button
+    onClick={[Function]}
+  >
+    SuperName
+  </Button>
+</EmotionCssPropInternal>
+`;

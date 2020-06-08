@@ -12,3 +12,4 @@ export const Error: React.FC = () => (
     </FlexBox>
   </Container>
 )
+Error.displayName = 'Error'

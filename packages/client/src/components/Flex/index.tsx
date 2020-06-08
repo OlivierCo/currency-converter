@@ -16,3 +16,4 @@ export const FlexBox: React.FC<Props> = ({ children, ...rest }) => (
     {children}
   </div>
 )
+FlexBox.displayName = 'FlexBox'

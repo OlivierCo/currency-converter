@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FlexBox should render correctly 1`] = `
+<EmotionCssPropInternal
+  __EMOTION_LABEL_PLEASE_DO_NOT_USE__="FlexBox"
+  __EMOTION_TYPE_PLEASE_DO_NOT_USE__="div"
+  css={
+    Object {
+      "map": undefined,
+      "name": "kdgkbl",
+      "next": undefined,
+      "styles": "display:flex;flex:1;flex-direction:row;justify-content:flex-start;;align-items:flex-start;;",
+      "toString": [Function],
+    }
+  }
+>
+  <div>
+    test
+  </div>
+</EmotionCssPropInternal>
+`;

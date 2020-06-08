@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Error should render correctly 1`] = `
+<Container
+  center={true}
+>
+  <EmotionCssPropInternal
+    __EMOTION_LABEL_PLEASE_DO_NOT_USE__="Loading"
+    __EMOTION_TYPE_PLEASE_DO_NOT_USE__={[Function]}
+    align="center"
+    css={
+      Object {
+        "map": undefined,
+        "name": "10klw3m",
+        "next": undefined,
+        "styles": "height:100%;",
+        "toString": [Function],
+      }
+    }
+    justify="center"
+  >
+    <span>
+      Loading...
+    </span>
+  </EmotionCssPropInternal>
+</Container>
+`;

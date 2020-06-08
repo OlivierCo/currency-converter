@@ -59,6 +59,11 @@ export const reducer = (state: State, action: Action): State => {
         left: {
           ...state.left,
           ...action.payload,
+          inputValue: '',
+        },
+        right: {
+          ...state.right,
+          inputValue: '',
         },
       }
     }
@@ -85,6 +90,11 @@ export const reducer = (state: State, action: Action): State => {
         right: {
           ...state.right,
           ...action.payload,
+          inputValue: '',
+        },
+        left: {
+          ...state.left,
+          inputValue: '',
         },
       }
     }

@@ -12,3 +12,4 @@ export const Loading: React.FC = () => (
     </FlexBox>
   </Container>
 )
+Loading.displayName = 'Loading'

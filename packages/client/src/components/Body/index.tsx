@@ -15,3 +15,4 @@ export const Body: React.FC<Props> = ({ children }) => (
     <Container>{children}</Container>
   </React.Fragment>
 )
+Body.displayName = 'Body'
