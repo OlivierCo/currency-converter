@@ -6,7 +6,7 @@ import { flexbox, CONTENT_ENUM } from './styles'
 
 export interface Props {
   children: React.ReactNode
-  column?: boolean
+  column?: 'true' | 'false'
   justify?: CONTENT_ENUM
   align?: CONTENT_ENUM
 }

@@ -2,6 +2,7 @@ const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
+  mode: 'development',
   entry: './src/index.tsx',
   resolve: {
     extensions: ['.ts', '.tsx', '.js'],
@@ -18,12 +19,12 @@ module.exports = {
       },
     ],
   },
+  optimization: {
+    splitChunks: { chunks: 'all' },
+  },
   plugins: [
     new HtmlWebpackPlugin({
       template: './src/html/index.html',
     }),
   ],
-  devServer: {
-    historyApiFallback: true,
-  },
 }

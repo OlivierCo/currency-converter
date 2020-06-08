@@ -1,3 +1,7 @@
 export { Body } from './Body'
 export { Container } from './Container'
 export { FlexBox } from './Flex'
+export { Loading } from './Loading'
+export { Error } from './Error'
+export { DropDown } from './DropDown'
+export { Button } from './Button'

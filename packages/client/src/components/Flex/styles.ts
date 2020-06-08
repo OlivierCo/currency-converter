@@ -9,7 +9,7 @@ export type CONTENT_ENUM =
   | 'space-evenly'
 
 interface FlexBoxProps {
-  column?: boolean
+  column?: 'true' | 'false'
   justify?: CONTENT_ENUM
   align?: CONTENT_ENUM
 }

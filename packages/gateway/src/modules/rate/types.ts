@@ -42,6 +42,7 @@ const GraphQLCurrencyEnum = new GraphQLEnumType({
     SGD: { value: 'SGD' },
     THB: { value: 'THB' },
     ZAR: { value: 'ZAR' },
+    EUR: { value: 'EUR' },
   },
 })
 
@@ -59,5 +60,6 @@ export const GraphQLDailyRate = new GraphQLObjectType({
       resolve: (src: DailyRate) => +src.rate,
     },
     symbol: { type: new GraphQLNonNull(GraphQLString) },
+    name: { type: GraphQLString },
   },
 })

@@ -4,6 +4,7 @@ import { InMemoryCache, NormalizedCacheObject } from 'apollo-cache-inmemory'
 import { ApolloClient } from 'apollo-client'
 import { createHttpLink } from 'apollo-link-http'
 import { ApolloProvider } from '@apollo/react-hooks'
+import { Body } from './components'
 import { App } from './views/App'
 
 const link = createHttpLink({ uri: 'http://localhost:4000/graphql' })
@@ -14,7 +15,9 @@ const client: ApolloClient<NormalizedCacheObject> = new ApolloClient({
 
 const Root = () => (
   <ApolloProvider client={client}>
-    <App />
+    <Body>
+      <App />
+    </Body>
   </ApolloProvider>
 )
 

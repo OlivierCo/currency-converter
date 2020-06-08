@@ -18,7 +18,7 @@ npm install
 
 ## Start the gateway & client
 
-- By running this command, it will launch simultaneously the gateway on port `4000` and the client on port `8080`
+- By running this command, it will launch simultaneously the gateway on port `4000` and the client on port `3000`
 
 ```
 yarn start
