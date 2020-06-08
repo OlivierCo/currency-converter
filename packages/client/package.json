@@ -10,7 +10,7 @@
   "scripts": {
     "test": "jest --collectCoverage",
     "build": "webpack",
-    "start": "webpack-dev-server --config webpack.config.js --inline=false --hot=false --port 3000"
+    "start": "webpack-dev-server --config webpack.config.js --port 3000 --open"
   },
   "dependencies": {
     "@apollo/react-hooks": "3.1.5",
