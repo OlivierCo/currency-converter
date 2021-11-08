@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "@types/xml2json": "0.11.0",
-    "apollo-server": "2.14.2",
+    "apollo-server": "2.25.3",
     "axios": "0.19.2",
     "chalk": "4.0.0",
     "country-currency-map": "2.1.7",
